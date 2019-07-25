@@ -1,0 +1,21 @@
+#a, #b, #c, #d, #e{
+  width: 100%;
+  text-align: center;
+}
+#show {
+  border-collapse:collapse;
+  width:100%;
+  table-layout: fixed;
+}
+.c1{
+  width: 8%;
+}
+.c3{
+  width: 20%;
+}
+.c2, .c4{
+  width: 36%;
+}
+table td {
+  word-wrap:break-word;
+}

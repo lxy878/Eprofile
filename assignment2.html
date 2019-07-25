@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8">
+<head>
+<title>Xiaoyi's Assignment2 Page</title>
+<head>
+<link rel="stylesheet" href="style.css">
+<script src="assignment1.js"></script>
+<script src="assignment2.js"></script>
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+</head>
+<body>
+<div class="nav">
+  <a href="index.html">Home</a>
+  <div class="linkslist">
+    <button id="active" class="ddbutton" onclick="dropdown1()">Assignments</button>
+    <div class="submenu" id="link1">
+      <a href="assignment1.html">Assignment1</a>
+      <a id="active" href="assignment2.html">Assignment2</a>
+      <a href="assignment3.html">Assignment3</a>
+    </div>
+  </div>
+  <div class="linkslist">
+    <button class="ddbutton" onclick="dropdown2()">Useful Links</button>
+    <div class="submenu" id="link2">
+      <a href="https://www.google.com/" target="_blank">Google Search</a>
+      <a href="http://www.qc.cuny.edu/pages/calendar.aspx" target="_blank">QC Calender</a>
+      <a href="https://www.zybooks.com/" target="_blank">Zybooks</a>
+      <a href="https://tinyurl.com/CS355-Fall2018" target="_blank">Class Lectures</a>
+      <a href ="https://join.slack.com/t/qcintertechtalk/shared_invite/enQtNDI5MTQ2MzU1MjM4LTM2NTc0NmY3MWM2NDdmNDk2ZjVlMjE5ZjdhZGYzYjkzNzRkY2NlMDRmMWQzOTZkZjk2NzEwZTM0YzkwNGE3ODU" target="_blank">Slack</a>
+    </div>
+  </div>
+</div>
+  <div class="main">
+    <h1>Assignment 2</h1>
+    <p style="padding-left:14%; padding-right: 14%"><strong>Note</strong>: For getting urls from History, it is not doable because most methods are unavailable right now.
+      The available menthods (such as .go(),.back(),ect) only act to move forward or backward window pages.
+      So, there is no way to get urls without going back the previous pages.</p>
+    <button id="current" onclick="a()">Get Local Information</button><p>Or</p>
+    <input id="files" type="file" accept="text/plain" onchange="fileUpload(event)"><br>
+    <button id="show" onclick="createTable()" disabled>Display Info</button>
+    <p id="table"></p>
+    <p id="schemeChart"></p>
+    <p id="tldChart"></p>
+  </div>
+  <footer>&copy Created by Xiaoyi Liu</footer>
+</body>
+</html>

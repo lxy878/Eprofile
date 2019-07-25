@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8">
+<head>
+<title>Xiaoyi's Assignment3 Page</title>
+<head>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="assignment3.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="assignment1.js"></script>
+<script src="assignment3.js"></script>
+</head>
+<body>
+<div class="nav">
+  <a href="index.html">Home</a>
+  <div class="linkslist">
+    <button id="active" class="ddbutton" onclick="dropdown1()">Assignments</button>
+    <div class="submenu" id="link1">
+      <a href="assignment1.html">Assignment1</a>
+      <a href="assignment2.html">Assignment2</a>
+      <a id="active" href="assignment3.html">Assignment3</a>
+    </div>
+  </div>
+  <div class="linkslist">
+    <button class="ddbutton" onclick="dropdown2()">Useful Links</button>
+    <div class="submenu" id="link2">
+      <a href="https://www.google.com/" target="_blank">Google Search</a>
+      <a href="http://www.qc.cuny.edu/pages/calendar.aspx" target="_blank">QC Calender</a>
+      <a href="https://www.zybooks.com/" target="_blank">Zybooks</a>
+      <a href="https://tinyurl.com/CS355-Fall2018" target="_blank">Class Lectures</a>
+      <a href ="https://join.slack.com/t/qcintertechtalk/shared_invite/enQtNDI5MTQ2MzU1MjM4LTM2NTc0NmY3MWM2NDdmNDk2ZjVlMjE5ZjdhZGYzYjkzNzRkY2NlMDRmMWQzOTZkZjk2NzEwZTM0YzkwNGE3ODU" target="_blank">Slack</a>
+    </div>
+  </div>
+</div>
+  <div class="main">
+    <h1>Assignment 3</h1>
+    <div id="a">
+      <label for="iptype">Select IP type:</label>
+      <select id="iptype" name="ip">
+        <option value="0">--Please choose an option--</option>
+        <option value="v4">IPv4</option>
+        <option value="v6">IPv6</option>
+      </select>
+    </div>
+    <div id="b">
+      <label for="classes">Select Classless or Classful:</label>
+      <select id="classes" name="classes" >
+        <option value="0">--Please choose an option--</option>
+        <option value="classful">classful</option>
+        <option value="classless">classless</option>
+      </select>
+    </div>
+    <div id="c" >
+      <label for="classtype">Select Class Type:</label>
+      <select id="classtype" name="classtype" >
+        <option value="0">--Please choose an option--</option>
+        <option value="a">A</option>
+        <option value="b">B</option>
+        <option value="c">C</option>
+        <option value="d">D</option>
+        <option value="e">E</option>
+      </select>
+    </div>
+    <div id="d">
+      <label for="compress">Zero Compression</label>
+      <select id="compress" name="ipv6">
+        <option value="0">--Please choose an option--</option>
+        <option value="yes">Yes</option>
+        <option value="no">No</option>
+      </select>
+    </div>
+    <div id="e">
+      <label for="n">How Many address:</label>
+      <input id="n" type="number" name="">
+      <button onclick="main()">get</button>
+    </div>
+    <table id="show">
+      <tr>
+        <th class="c1"></th>
+        <th class="c2">Public IP</th>
+        <th class="c3">Mask</th>
+        <th class="c4">Host IPs</th>
+      </tr>
+      <tr>
+        <td>Normal Form</td>
+        <td id="public"></td>
+        <td id= "mask1"></td>
+        <td ><ol id="hostList"></ol></td>
+      </tr>
+      <tr>
+        <td>Binary Form</td>
+        <td id="binP"></td>
+        <td id="mask2"></td>
+        <td ><ol id="hostBinaryList"></ol></td>
+      </tr>
+    </table>
+    <br>
+  </div>
+  <footer>&copy Created by Xiaoyi Liu</footer>
+</body>
+</html>

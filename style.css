@@ -1,0 +1,91 @@
+body{
+  margin: 0;
+}
+.nav {
+    overflow: hidden;
+    background-color: black;
+    width: 100%;
+}
+
+.nav a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.linkslist {
+    float: left;
+    overflow: hidden;
+}
+
+.linkslist .ddbutton {
+    cursor: pointer;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+
+.nav a:hover, .linkslist:hover .ddbutton, .ddbutton:focus {
+    background-color: blue;
+}
+
+.submenu {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.submenu a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.submenu a:hover {
+    background-color: #ddd;
+}
+
+.show {
+    display: block;
+}
+div{
+  float: left;
+}
+.main{
+  width: 100%;
+  background-color: #e6f7ff;
+
+  text-align: center;
+}
+.foot{
+  background-color: black;
+  width: 100%;
+}
+.foot p{
+  color: white;
+}
+footer{
+  background-color: black;
+  color: white;
+}
+#active{
+  background-color: #00ff80;
+  color: black;
+}
+table, th, td{
+  border: 1px solid black;
+}

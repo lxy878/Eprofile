@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8">
+<head>
+<title>Xiaoyi's Assignments Page</title>
+<head>
+<link rel="stylesheet" href="style.css">
+<script src="script.js"></script>
+</head>
+<body>
+<div class="nav">
+  <a href="index.html">Home</a>
+  <a id="active" href="assignments.html">Assignments</a>
+  <div class="linkslist">
+    <button class="ddbutton" onclick="dropdown()">Useful Links</button>
+    <div class="submenu" id="link">
+      <a href="https://www.google.com/" target="_blank">Google Search</a>
+      <a href="http://www.qc.cuny.edu/pages/calendar.aspx" target="_blank">QC Calender</a>
+      <a href="https://www.zybooks.com/" target="_blank">Zybooks</a>
+      <a href="https://tinyurl.com/CS355-Fall2018" target="_blank">Class Lectures</a>
+      <a href ="https://join.slack.com/t/qcintertechtalk/shared_invite/enQtNDI5MTQ2MzU1MjM4LTM2NTc0NmY3MWM2NDdmNDk2ZjVlMjE5ZjdhZGYzYjkzNzRkY2NlMDRmMWQzOTZkZjk2NzEwZTM0YzkwNGE3ODU" target="_blank">Slack</a>
+    </div>
+  </div>
+</div>
+  <div class="main">
+    <h1>Assignment 1</h1>
+    <p>Press the button to get the information of your browser, screen, and window.</p>
+    <button onclick="getInfor()">Get Information</button>
+    <p id="browser"></p>
+    <p id="screen"></p>
+    <p id="window"></p>
+  </div>
+  <footer>&copy created by Xiaoyi Liu</footer>
+</body>
+</html>
