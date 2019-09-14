@@ -4,6 +4,7 @@
 <head>
 <title>Xiaoyi's Assignment2 Page</title>
 <link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/assignment2.css">
 <script src="js/assignment1.js"></script>
 <script src="js/assignment2.js"></script>
 <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
@@ -32,16 +33,18 @@
 </div>
   <div class="main">
     <h1>Assignment 2</h1>
-    <p style="padding-left:14%; padding-right: 14%"><strong>Description</strong>
-      : display information based on urls by using document functions and XMLHttpRequest.</p>
-    <p>Option 1: <button id="current" onclick="a()"> current url's Information</button> </p>
-    <p>Option 2: upload a text file that includes a list of line-separated urls.</p>
-    <input id="files" type="file" accept="text/plain" onchange="fileUpload(event)"><br>
-    <button id="show" onclick="createTable()" disabled>Display Info</button>
-    <p id="table"></p>
-    <p id="schemeChart"></p>
-    <p id="tldChart"></p>
+    <div class="context">
+      <p><strong>Description</strong>
+        : display information based on urls by using document functions and XMLHttpRequest.</p>
+      <p>Option 1: <button id="current" onclick="a()"> current url's Information</button> </p>
+      <p>Option 2: upload a text file that includes a list of line-separated urls.</p>
+      <input id="files" type="file" accept="text/plain" onchange="fileUpload(event)"><br><br>
+      <button id="show" onclick="createTable()" disabled>Display Info</button>
+      </div>
+      <div id="table"></div>
+      <div id="schemeChart"></div>
+      <div id="tldChart"></div>
   </div>
-  <footer>&copy; Created by Xiaoyi Liu</footer>
+  <footer>&copy; Created by Xiaoyi Liu, 2019</footer>
 </body>
 </html>

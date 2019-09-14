@@ -33,70 +33,73 @@
 </div>
   <div class="main">
     <h1>Assignment 3</h1>
-    <p><strong>Description</strong>: IP generator. Create public IPs and private IPs base on options.
-      <br>Display them in the normal form and the binary form.</p>
-    <div id="a">
-      <label for="iptype">Select IP type:</label>
-      <select id="iptype" name="ip">
-        <option value="0">--Please choose an option--</option>
-        <option value="v4">IPv4</option>
-        <option value="v6">IPv6</option>
-      </select>
+    <div class="context">
+      <p><strong>Description</strong>:IP generator. Create public IPs and private IPs based on options.
+        Display them in the normal form and the binary form.</p>
+        <div id="a">
+          <label for="iptype">Select IP type:</label>
+          <select id="iptype" name="ip">
+            <option value="0">--Please choose an option--</option>
+            <option value="v4">IPv4</option>
+            <option value="v6">IPv6</option>
+          </select>
+        </div>
+        <div id="b">
+          <label for="classes">Select Classless or Classful:</label>
+          <select id="classes" name="classes" >
+            <option value="0">--Please choose an option--</option>
+            <option value="classful">classful</option>
+            <option value="classless">classless</option>
+          </select>
+        </div>
+        <div id="c" >
+          <label for="classtype">Select Class Type:</label>
+          <select id="classtype" name="classtype" >
+            <option value="0">--Please choose an option--</option>
+            <option value="a">A</option>
+            <option value="b">B</option>
+            <option value="c">C</option>
+            <option value="d">D</option>
+            <option value="e">E</option>
+          </select>
+        </div>
+        <div id="d">
+          <label for="compress">Zero Compression</label>
+          <select id="compress" name="ipv6">
+            <option value="0">--Please choose an option--</option>
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+          </select>
+        </div>
+        <div id="e">
+          <label for="n">How Many address:</label>
+          <input id="n" type="number" name="">
+          <button onclick="main()">Get Results</button>
+        </div>
     </div>
-    <div id="b">
-      <label for="classes">Select Classless or Classful:</label>
-      <select id="classes" name="classes" >
-        <option value="0">--Please choose an option--</option>
-        <option value="classful">classful</option>
-        <option value="classless">classless</option>
-      </select>
+    <div id="tableDiv">
+      <table id="show">
+        <tr>
+          <th class="c1"></th>
+          <th class="c2">Public IP</th>
+          <th class="c3">Mask</th>
+          <th class="c4">Host IPs</th>
+        </tr>
+        <tr>
+          <td>Normal Form</td>
+          <td id="public"></td>
+          <td id= "mask1"></td>
+          <td ><ol id="hostList"></ol></td>
+        </tr>
+        <tr>
+          <td>Binary Form</td>
+          <td id="binP"></td>
+          <td id="mask2"></td>
+          <td ><ol id="hostBinaryList"></ol></td>
+        </tr>
+      </table>
     </div>
-    <div id="c" >
-      <label for="classtype">Select Class Type:</label>
-      <select id="classtype" name="classtype" >
-        <option value="0">--Please choose an option--</option>
-        <option value="a">A</option>
-        <option value="b">B</option>
-        <option value="c">C</option>
-        <option value="d">D</option>
-        <option value="e">E</option>
-      </select>
-    </div>
-    <div id="d">
-      <label for="compress">Zero Compression</label>
-      <select id="compress" name="ipv6">
-        <option value="0">--Please choose an option--</option>
-        <option value="yes">Yes</option>
-        <option value="no">No</option>
-      </select>
-    </div>
-    <div id="e">
-      <label for="n">How Many address:</label>
-      <input id="n" type="number" name="">
-      <button onclick="main()">get</button>
-    </div>
-    <table id="show">
-      <tr>
-        <th class="c1"></th>
-        <th class="c2">Public IP</th>
-        <th class="c3">Mask</th>
-        <th class="c4">Host IPs</th>
-      </tr>
-      <tr>
-        <td>Normal Form</td>
-        <td id="public"></td>
-        <td id= "mask1"></td>
-        <td ><ol id="hostList"></ol></td>
-      </tr>
-      <tr>
-        <td>Binary Form</td>
-        <td id="binP"></td>
-        <td id="mask2"></td>
-        <td ><ol id="hostBinaryList"></ol></td>
-      </tr>
-    </table>
-    <br>
   </div>
-  <footer>&copy; Created by Xiaoyi Liu</footer>
+  <footer>&copy; Created by Xiaoyi Liu, 2019</footer>
 </body>
 </html>

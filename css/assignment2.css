@@ -1,0 +1,6 @@
+#table, #schemeChart, #tldChart{
+  padding: 10px;
+}
+table td {
+  word-wrap:break-word;
+}

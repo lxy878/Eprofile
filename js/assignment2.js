@@ -79,6 +79,9 @@ var headers = ["URL Name", "Scheme","UseInfo","Host","Port","Path","Query","Frag
 function createTable(){
   document.getElementById("show").disabled=true;
   var table = document.createElement("table");
+  var style = "border-collapse:collapse; width:100%; table-layout: fixed;"
+  // add a table style
+  table.setAttribute("style", style);
   //create a header
   var tableHead = document.createElement("thead");
   var rowH = document.createElement("tr");
@@ -153,18 +156,18 @@ function chart(targerName, targer) {
   google.charts.load('current', {'packages':['corechart']});
   google.charts.setOnLoadCallback(drawChart);
 
-// Draw the chart and set the chart values
+  // Draw the chart and set the chart values
   function drawChart() {
     var data = google.visualization.arrayToDataTable(array);
 
-  // Optional; add a title and set the width and height of the chart
-  var options = {'title':targerName, 'width':550, 'height':400, 'backgroundColor':'#e6f7ff'};
-  // Display the chart inside the <div> element with id="piechart"
-  if(targer === schemeType){
-    var chart = new google.visualization.PieChart(document.getElementById("schemeChart"));
-  }else{
-    var chart = new google.visualization.PieChart(document.getElementById("tldChart"));
+    // Optional; add a title and set the width and height of the chart
+    var options = {'title':targerName, 'width':550, 'height':400, 'backgroundColor':'#e6f7ff'};
+    // Display the chart inside the <div> element with id="piechart"
+    if(targer === schemeType){
+      var chart = new google.visualization.PieChart(document.getElementById("schemeChart"));
+    }else{
+      var chart = new google.visualization.PieChart(document.getElementById("tldChart"));
+    }
+    chart.draw(data, options);
   }
-  chart.draw(data, options);
-}
 }

@@ -29,39 +29,40 @@
   </div>
 </div>
   <div class="main">
-    <h1>Welcome to My Home Page!</h1>
-    <img src="img/home.jpg" alt="Home Image">
+    <h1>Welcome to My Home Page</h1>
+    <div class="context">
+      My name is Xiaoyi Liu.  I recently graduated in Computer Science degree from Queens College of City University of New York.
+      Now, I am seeking a position as a software engineer. <br><br>
+      During academic years, I accomplished a variety projects in different programming
+      languages.  C++ was the first programming languages I learned and the fundamental of all
+      languages I have learned so far. Starting from junior year, Java becomes my prime programming language to build most of my projects
+      such as Classification and Regression Trees, Craigslist_App etc.  In addition, I obtained some experience with SQL language from
+      Database course and some experience with front-end web design from Internet and Web Technologies course.<br><br>
+      Below the best projects I had completed:<br><br>
+      <table>
+        <tr>
+          <th>Programming Language</th>
+          <th>Program Name</th>
+          <th>Related with Curriculum</th>
+        </tr>
+        <tr>
+          <td>Java</td>
+          <td><a href="https://github.com/lxy878/JavaApplication" target="_blank">Craigslist_App</a></td>
+          <td>Software Engineering</td>
+        </tr>
+        <tr>
+          <td>Java</td>
+          <td><a href="https://github.com/lxy878/Multithread" target="_blank">Big Catch</a></td>
+          <td>Operating System</td>
+        </tr>
+        <tr>
+          <td>HTML, CSS, JavaScript</td>
+          <td><a href="https://github.com/lxy878/E-Profile" target="_blank">Website</a></td>
+          <td>Internet and Web technologies</td>
+        </tr>
+      </table><br>
+    </div>
   </div>
-  <footer>&copy; Created by Xiaoyi Liu, 2018</footer>
-
-    <!-- The core Firebase JS SDK is always required and must be listed first -->
-  <script src="https://www.gstatic.com/firebasejs/6.3.3/firebase-app.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/6.3.3/firebase-auth.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/6.3.3/firebase-firestore.js"></script>
-
-  <!-- TODO: Add SDKs for Firebase products that you want to use
-       https://firebase.google.com/docs/web/setup#config-web-app -->
-
-  <script>
-    // Your web app's Firebase configuration
-    var firebaseConfig = {
-      apiKey: "AIzaSyD9tkm5pmMkUa94YCKXPKi0TcnRasDkjrw",
-      authDomain: "testing-ad280.firebaseapp.com",
-      databaseURL: "https://testing-ad280.firebaseio.com",
-      projectId: "testing-ad280",
-      storageBucket: "testing-ad280.appspot.com",
-      messagingSenderId: "913831588765",
-      appId: "1:913831588765:web:b9dd8d760ffa5275"
-    };
-    // Initialize Firebase
-    firebase.initializeApp(firebaseConfig);
-
-    // auth and firestore references
-    const auth = firebase.auth();
-    const db = firebase.firestore();
-
-    // database setting
-    db.settings({timestampsInSnapshots: true});
-  </script>
+  <footer>&copy; Created by Xiaoyi Liu, 2019</footer>
 </body>
 </html>

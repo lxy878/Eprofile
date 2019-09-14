@@ -68,8 +68,14 @@ div{
 .main{
   width: 100%;
   background-color: #e6f7ff;
-
+}
+h1{
   text-align: center;
+}
+.context{
+  padding-left: 15%;
+  padding-right: 15%;
+  padding-bottom: 15px;
 }
 .foot{
   background-color: black;

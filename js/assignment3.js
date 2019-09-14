@@ -77,6 +77,7 @@ function main(){
   }
   toTable();
 }
+
 function toTable(){
   var finalIp="", finalIpB="", e="", eb="", mb=mask;
   if(classOption == "classless"&&classType != "e"&&classType!="d"){

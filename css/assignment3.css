@@ -1,6 +1,8 @@
 #a, #b, #c, #d, #e{
   width: 100%;
-  text-align: center;
+}
+#tableDiv{
+  padding: 10px;
 }
 #show {
   border-collapse:collapse;
